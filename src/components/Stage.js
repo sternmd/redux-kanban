@@ -13,7 +13,7 @@ const Stage = ({ name, stageId, tasks }) => {
         background: '#fafafa'
       }}
     >
-      <h2>{name}</h2>
+      <h2 style={{ margin: '1rem' }}>{name}</h2>
       <div>
         {tasks.map(task => (
           <Task key={task.name} name={task.name} />

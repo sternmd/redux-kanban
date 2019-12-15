@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { selectTask } from '../actions';
+import { Notification, Delete } from 'bloomer';
 
 const taskNameToId = name => {
   return `task-${name.split(' ').join('-')}`;
@@ -14,17 +15,19 @@ class Task extends Component {
   render() {
     const { name } = this.props;
     return (
-      <div
+      <Notification
+        isColor='info'
         style={{
           padding: '1rem',
           border: '1px solid #ccc',
-          margin: '1rem 1rem 0 1rem'
+          margin: '1rem 1rem 0 1rem',
+          cursor: 'pointer'
         }}
         onClick={() => this.selectTask(name)}
         data-testid={taskNameToId(name)}
       >
-        {name}
-      </div>
+        {name} <Delete />
+      </Notification>
     );
   }
 }

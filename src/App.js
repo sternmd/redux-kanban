@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Container } from 'bloomer';
 import './App.css';
 
 import Controls from './components/Controls';
@@ -28,7 +29,9 @@ class App extends Component {
     return (
       <div className='App'>
         <Controls />
-        <Board stagesTasks={stagesTasks} stagesNames={this.stagesNames} />
+        <Container>
+          <Board stagesTasks={stagesTasks} stagesNames={this.stagesNames} />
+        </Container>
       </div>
     );
   }
