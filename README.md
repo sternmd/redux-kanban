@@ -1,5 +1,3 @@
-![](https://i.imgur.com/5J9WDiy.png)
-
 # Twitter Search & Stream
 
 ![](https://i.imgur.com/BW4Lk9S.png)
