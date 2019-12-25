@@ -1,4 +1,4 @@
-# Twitter Search & Stream
+# React Kanban Board
 
 ![](https://i.imgur.com/BW4Lk9S.png)
 
@@ -6,7 +6,7 @@ This app displays latest matching tweets (in real-time) based on the user's sear
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Basic kanban board designed to help visualize work, limit work-in-progress, and maximize efficiency.
 
 ### Prerequisites
 
