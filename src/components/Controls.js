@@ -73,6 +73,8 @@ class Controls extends Component {
               value={this.props.selectedTask || ''}
             />
             <Button
+              isOutlined
+              isColor='primary'
               style={{ marginLeft: '1rem' }}
               disabled={!this.props.selectedTask}
               data-testid='move-back-btn'
@@ -81,6 +83,8 @@ class Controls extends Component {
               Move back
             </Button>
             <Button
+              isOutlined
+              isColor='primary'
               style={{ marginLeft: '1rem' }}
               disabled={!this.props.selectedTask}
               data-testid='move-forward-btn'
@@ -89,6 +93,8 @@ class Controls extends Component {
               Move forward
             </Button>
             <Button
+              isOutlined
+              isColor='danger'
               style={{ marginLeft: '1rem' }}
               disabled={!this.props.selectedTask}
               data-testid='delete-btn'
